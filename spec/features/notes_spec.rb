@@ -9,4 +9,8 @@ describe Note do
 
     expect(page).to have_content 'test note name'
   end
+
+  it 'editable' do
+    #pending
+  end
 end
