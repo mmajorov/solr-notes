@@ -28,6 +28,9 @@ gem 'turbolinks'
 gem 'haml-rails'
 gem 'erb2haml', group: :development
 
+# twitter bootstrap
+gem 'twitter-bootstrap-rails'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
