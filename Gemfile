@@ -31,6 +31,10 @@ gem 'erb2haml', group: :development
 # twitter bootstrap
 gem 'twitter-bootstrap-rails'
 
+# search
+gem 'sunspot_solr'
+gem 'sunspot_rails'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
