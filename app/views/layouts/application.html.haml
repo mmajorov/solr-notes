@@ -30,6 +30,8 @@
           %ul.nav.navbar-nav
             %li= link_to Note.model_name.human(count: 2), notes_path
             %li= link_to Category.model_name.human(count: 2), categories_path
+          %form.navbar-form.navbar-right{action: :search}
+            %input.form-control{placeholder:"Search...", name: :q}
 
     .container
       .row
