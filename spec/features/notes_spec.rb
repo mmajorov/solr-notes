@@ -10,7 +10,15 @@ describe Note do
     expect(page).to have_content 'test note name'
   end
 
-  it 'editable' do
-    #pending
+  context 'existed' do
+    let(:note){FactoryGirl.create(:note)}
+
+    it 'can be updated' do
+      visit edit_note_path(note)
+      fill_in 'Name', with: 'updated note name'
+      click_button 'Update Note'
+
+      expect(note.reload.name).to eq 'updated note name'
+    end
   end
 end
