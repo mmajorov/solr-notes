@@ -13,8 +13,10 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
+/log/**
 /tmp
 /cookbooks/**
 /.idea/**
 /.vagrant/**
 *.swp
+/solr/**
